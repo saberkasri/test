@@ -1,0 +1,4 @@
+FROM localhost:5001/whanos-java:base
+COPY . .
+RUN mvn package
+CMD ["java", "-jar", "target/app.jar"]

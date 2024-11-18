@@ -1,0 +1,4 @@
+FROM localhost:5001/whanos-c:base
+COPY . .
+RUN make
+CMD ["./compiled-app"]
